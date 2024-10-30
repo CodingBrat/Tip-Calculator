@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc-container">
+            <h1 id="header">Tip Calculator</h1>
+            <div class="fields">
+                <div class="field1">
+                    <h2>Bill (IN INR)</h2>
+                    <input type="number" name="bill" id="bill">
+                </div>
+                <div class="field2">
+                    <h2>Tip (IN INR)</h2>
+                    <input type="number" name="Tip" id="tip">
+                </div>  
+            </div>
+            <div class="display-logic">
+                <div class="ppl-buttons">
+                    <h1 id="ppl-count">Number of people</h1>
+                    <div class="icons-display">
+                        <i class="fa-solid fa-plus" id="add-icon" onclick="clicked_plus()"></i>
+                        <h1><span id="count">0</span></h1>
+                        <i class="fa-solid fa-minus" id="minus-icon" onclick="clicked_minus()"></i>
+                    </div>
+                    
+                </div>
+                <!-- tpp = total per person -->
+                <div class="tpp-display">
+                    <h1 id="total-bill-header">Total Bill per Person</h1>
+                    <h1 id="bill-display"><i class="fa-solid fa-indian-rupee-sign"></i><span id="total">0</span></h1>
+                </div>
+            </div>
+            <div class="btn">
+                <button onclick="showbill()">Show Bill</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
